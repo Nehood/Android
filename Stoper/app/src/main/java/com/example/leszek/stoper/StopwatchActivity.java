@@ -10,12 +10,39 @@ public class StopwatchActivity extends Activity {
 
     private int seconds;
     private boolean isRunning;
+    private boolean wasRunning;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stopwatch);
+        if (savedInstanceState != null)
+        {
+            this.seconds = savedInstanceState.getInt("seconds");
+            this.isRunning = savedInstanceState.getBoolean("isRunning");
+            this.wasRunning = savedInstanceState.getBoolean("wasRunning");
+        }
         runTimer();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("seconds", seconds);
+        outState.putBoolean("isRunning", isRunning);
+        outState.putBoolean("wasRunning", wasRunning);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (wasRunning) isRunning = true;
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        wasRunning = isRunning;
+        isRunning = false;
     }
 
     public void onClickStart(View view)
