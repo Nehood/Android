@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Coffeina</string>
+    <string name="logo">Logo kawiarni</string>
+    <string-array name="options">
+        <item>napoje</item>
+        <item>przekaski</item>
+        <item>bzdury</item>
+    </string-array>
 </resources>
