@@ -1,0 +1,7 @@
+<resources>
+    <string name="sction_create_order">Złóż zamówienie</string>
+    <string name="action_share">Udostępnij</string>
+    <string name="app_name">Wloskie Co Nieco</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_order">Złóż zamówienie</string>
+</resources>
