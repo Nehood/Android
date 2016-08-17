@@ -4,4 +4,26 @@
     <string name="app_name">Wloskie Co Nieco</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_order">Złóż zamówienie</string>
+    <string-array name="pizzas">
+        <item>Funghi</item>
+        <item>Diabolo</item>
+    </string-array>
+    <string-array name="pastas">
+        <item>Bolognese</item>
+        <item>Lasagne</item>
+    </string-array>
+    <string-array name="stores">
+        <item>Kraków</item>
+        <item>Warszawa</item>
+    </string-array>
+    <string-array name="titles">
+        <item>Ekran Główny</item>
+        <item>Pizze</item>
+        <item>Makarony</item>
+        <item>Restauracje</item>
+    </string-array>
+    <string name="open_drawer">Otwórz szufladę</string>
+    <string name="close_drawer">Zamknij szufladę</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
